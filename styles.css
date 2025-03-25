@@ -1,0 +1,237 @@
+/* RESET ======================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+/*
+body * {
+	border: 1px solid #fff;
+}
+*/
+
+/* SISTEMA DE REJILLA (LAYOUT) ================================= */
+
+.row {
+    width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* UTILIDADES ================================================== */
+
+/* --- 1 --- */ 
+.skew {
+	transform: skewX(15deg);
+}
+/* --- 1 --- */ 
+.no-skew {
+	transform: skewX(-15deg);
+}
+
+/* HEADER SECTION ============================================== */
+
+.header-nav-content {
+	position: relative;    
+	display: flex;
+	justify-content: center;
+}
+.header-nav .nav-humberger-menu {
+	margin-right: 15px;
+    padding: 15px 28px;    
+    background: #a81d1d;
+    font-size: 15px;        
+    cursor: pointer; 
+}
+.header-nav .nav-menu {
+	display: none;	
+    text-align: center;
+}
+.header-nav .nav-menu .menu-item {
+    display: inline-block;
+    margin-right: 4px;
+    text-align: center;
+}
+
+/* UPDATE NEWS SECTION ========================================= */
+
+.update-news-content {
+	display: flex;
+	flex-direction: column;
+}
+.sidebar-option {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+/* --- 2 --- */ 
+.sidebar-option .best-of-post .bp-item .review-point:hover {
+	transform: rotate(360deg);
+}
+/* --- 3 --- */ 
+.un-slider .un-item .un_pic:hover {
+	transform: scale(1.1);
+}
+
+/* FOOTER SECTION ============================================== */
+
+.footer-section-top {
+	display: flex;
+	flex-direction: column;
+}
+.footer-about {
+    margin-bottom: 50px;
+}
+.footer-wrapper {
+	display: flex;
+	flex-direction: column;	
+	flex-direction: space-between;
+	margin-top: 20px;	
+    border-top: 1px solid #252525;
+	padding-top: 24px;
+	padding-bottom: 18px;
+}
+.footer-wrapper .footer-text {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.footer-wrapper .footer-links {
+    text-align: center;
+}
+
+
+/* ============================================================= */
+/* RESPONSIVE MEDIA QUERIES ==================================== */
+/* ============================================================= */
+
+
+/* MEDIA QUERY: Para tipos de medio que sean pantallas con una anchura de visualización mayor o igual que 576px */
+
+@media screen and (min-width: 576px) {
+	
+	/* LAYOUT */
+
+    /* --- 4 --- */
+	.row {
+		width: 540px;
+	}
+}
+
+/* MEDIA QUERY: Para tipos de medio que sean pantallas con una anchura de visualización mayor o igual que 768px */
+
+@media screen and (min-width: 768px) {
+
+	/* LAYOUT */
+
+    /* --- 5 --- */    
+	.row {
+		width: 720px;
+	}
+
+	/* UPDATE NEWS Section */  
+    
+    /* --- 6 --- */ 
+    .un-slider .un-big-item {
+        height: 540px;
+    }  
+	
+	/* FOOTER Section */
+
+    /* --- 7 --- */ 
+	.footer-section-top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+    /* --- 8 --- */ 
+	.footer-about {
+		width: 50%;
+		margin-bottom: 0;
+	}
+    /* --- 9 --- */ 
+	.subscribe-option {
+		width: 45%;
+	}
+}
+
+/* MEDIA QUERY: Para tipos de medio que sean pantallas con una anchura de visualización mayor o igual que 992px */
+
+@media screen and (min-width: 992px) {
+
+	/* LAYOUT */
+
+    /* --- 10 --- */	
+	.row {
+		width: 960px;
+	}
+
+	/* HEADER Section */
+
+    /* --- 11 --- */	
+	.header-nav-content {
+		display: flex;
+		justify-content: space-between;
+	}
+    /* --- 12 --- */	
+	.header-nav .nav-humberger-menu {
+		margin-right: 0px;
+	}	
+    /* --- 13 --- */	
+	.header-nav .nav-menu {
+		display:block;
+	}
+
+	/* UPDATE NEWS Section */
+
+    /* --- 14 --- */	
+	.update-news-content {
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+    /* --- 15 --- */	
+	.update-news {
+		width: 66%;
+	}
+    /* --- 16 --- */
+    .un-slider .un-big-item {
+        height: 480px;
+    }    
+    /* --- 17 --- */	
+	.sidebar-option {
+		width: 29%;
+		margin-top: 0px;
+	}
+
+    /* FOOTER Section */
+
+    /* --- 18 --- */
+	.footer-about {
+		width: 44%;
+	}
+}
+
+/* MEDIA QUERY: Para tipos de medio que sean pantallas con una anchura de visualización mayor o igual que 1200px */
+
+@media screen and (min-width: 1200px) {
+	
+	/* LAYOUT */
+
+    /* --- 19 --- */
+	.row {
+		width: 1170px;
+	}
+
+	/* UPDATE NEWS Section */    
+
+    /* --- 20 --- */
+    .un-slider .un-big-item {
+        height: 540px;
+    }
+}
